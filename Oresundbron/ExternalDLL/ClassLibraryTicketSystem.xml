@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClassLibraryTicketSystem</name>
+    </assembly>
+    <members>
+        <member name="T:ClassLibraryTicketSystem.BridgeCrossing">
+            <summary>
+            This is the base class from which the Car and MC classes and the library classes inherit.
+            </summary>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.BridgeCrossing.#ctor(System.Boolean,System.DateTime)">
+             <summary>
+             This constructor initializes the Brobizz discount and the date when a Car or MC object is created.
+             It also takes the Price() from each vehicle class and uses it to calculate the discounted price to be paid,
+             which becomes the TicketPrice.
+             </summary>
+             <param name="broBizzDiscount"></param> 
+            
+        </member>
+        <member name="P:ClassLibraryTicketSystem.BridgeCrossing.LicensePlate">
+            <summary>
+            This is a property for the license plate.
+            It must only be 7 characters long,
+            otherwise it will throw an exception.
+            </summary>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.BridgeCrossing.CalculateDiscountPrice(System.Boolean)">
+            <summary>
+            Checks if the user is a Brobizz user then
+            calculates the the price to be paid accordingly.
+            BasePrice is the price of each vehicle that is set in the corresponding classes.
+            Made this a virtual method so it can be overrided in the Car class to implement the
+            weekend discount.
+            </summary>
+            <returns>The result of the calculation to get the price after discount.</returns>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.BridgeCrossing.Price">
+            <summary>
+            This is inherited and implemented by the different types of vehicle classes and other library classes.
+            </summary>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.BridgeCrossing.Vehicle">
+            <summary>
+            This is inherited and implemented by the different types of vehicle classes and other library classes.
+            </summary>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.Car.#ctor(System.Boolean,System.DateTime)">
+            <summary>
+            This constructor inherits from the BridgeCrossing base class.
+            </summary>
+            <param name="broBizzDiscount"></param>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.Car.Price">
+            <summary>
+            This method is inherited from the the BridgeCrossing base class
+            and implemented here. It doesn't return anything.
+            I just assigned the price to BasePrice (which is a property in BridgeCrossing).
+            </summary>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.Car.Vehicle">
+            <summary>
+            This method is inherited from the the BridgeCrossing base class
+            and implemented here.
+            </summary>
+            <returns>the type of vehicle</returns>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.MC.#ctor(System.Boolean,System.DateTime)">
+            <summary>
+            This constructor inherits from the BridgeCrossing base class.
+            </summary>
+            <param name="broBizzDiscount"></param>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.MC.Price">
+            <summary>
+            This method is inherited from the the BridgeCrossing base class
+            and implemented here. It doesn't return anything.
+            I just assigned the price to BasePrice (which is a property in BridgeCrossing).
+            </summary>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.MC.Vehicle">
+            <summary>
+            This method is inherited from the the BridgeCrossing base class
+            and implemented here.
+            </summary>
+            <returns>the type of vehicle</returns>
+        </member>
+    </members>
+</doc>
