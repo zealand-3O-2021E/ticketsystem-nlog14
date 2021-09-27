@@ -11,6 +11,31 @@ namespace StoreBaeltTicketLibrary.Tests
     [TestClass()]
     public class StoreBaeltWeekendDiscountTests
     {
+        [TestMethod()]
+        public void CalculateWeekendDiscountPriceBrobizzTrueTest()
+        {
+            //Act
+            StoreBaeltWeekendDiscount SBWD = new StoreBaeltWeekendDiscount(true, new DateTime(2021, 09, 27));
+
+            //Arrange
+            double price = SBWD.TicketPrice;
+
+            //Assert
+            Assert.AreEqual(228.00, price);
+        }
+
+        [TestMethod()]
+        public void CalculateWeekendDiscountPriceBrobizzFalseTest()
+        {
+            //Act
+            StoreBaeltWeekendDiscount SBWD = new StoreBaeltWeekendDiscount(false, new DateTime(2021, 09, 27));
+
+            //Arrange
+            double price = SBWD.TicketPrice;
+
+            //Assert
+            Assert.AreEqual(240.00, price);
+        }
 
         [TestMethod()]
         public void CalculateDiscountPriceBrobizzTrueTest()
