@@ -13,6 +13,7 @@ namespace ClassLibraryTicketSystem
         /// This constructor inherits from the BridgeCrossing base class.
         /// </summary>
         /// <param name="broBizzDiscount"></param>
+        /// Need to add license plate
         public Car(bool broBizzDiscount, DateTime date) : base(broBizzDiscount, date)
         {
            

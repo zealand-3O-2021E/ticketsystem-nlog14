@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreBaeltTicketLibrary", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreBaeltTicketLibraryTests", "StoreBaeltTicketLibraryTests\StoreBaeltTicketLibraryTests.csproj", "{D9FF1DF3-F5CD-4B33-8FD1-DC60113235CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OresundbronTests", "OresundbronTests\OresundbronTests.csproj", "{9A663AFA-AE55-44B4-8401-61FE8F7B4C7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OresundbronTests", "OresundbronTests\OresundbronTests.csproj", "{9A663AFA-AE55-44B4-8401-61FE8F7B4C7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
