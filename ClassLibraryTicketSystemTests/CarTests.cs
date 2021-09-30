@@ -46,7 +46,6 @@ namespace ClassLibraryTicketSystem.Tests
 
             //Arrange
             car.LicensePlate = "ABC12345";
-
             //Assert
             Assert.Fail();
         }
